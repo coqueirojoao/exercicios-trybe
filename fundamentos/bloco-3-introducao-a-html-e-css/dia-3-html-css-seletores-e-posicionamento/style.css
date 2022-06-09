@@ -1,37 +1,60 @@
-.super-mario {
-    width: 200px;
-  }
-  
-  .goomba {
-    width: 100px;
-    top: 280px;
-    display: block;
-  }
-  
-  .baloon {
-      top: -80px;
-      z-index: 3;
-      position: relative;
+ol {
+  background-color: yellow;
+}
 
+ol li:nth-of-type(even) {
+  color: green;
+}
 
-  
-  }
-  
-  .speach {
-    font-size: 25px;
-  }
-  
-  .bowser {
-    width: 200px;
-    z-index: 5;
-    position: absolute;
-    margin-left: 300px;
-    top: 650px;
-  }
+ol li:nth-of-type(odd) {
+  text-transform: uppercase;
+}
 
-  p {
-      top: 35px;
-      position: relative;
-      margin-left: 20px;
-      z-index: 6;
-  }
+h1, h3 {
+  color: red;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: 700;
+}
+
+.programacao li:nth-of-type(-n+3) {
+  color: blue;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.link:hover {
+  font-weight: 700;
+}
+
+.link li a[href*="stackoverflow"] {
+  color: orange;
+}
+
+.link li a[href*="w3schools"] {
+  color: green;
+}
+
+.link li a[href*="MDN Web Docs"] {
+  color: black;
+}
+
+.link li a[href*="DevDocs"] {
+  color: yellow;
+}
+
+.link li a[href*="Trybe"] {
+  color: green
+}
