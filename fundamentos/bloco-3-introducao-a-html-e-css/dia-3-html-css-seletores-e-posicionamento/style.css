@@ -1,31 +1,60 @@
-div:hover {
-  border-style: outset;
+ol {
+  background-color: yellow;
 }
 
-div:nth-of-type(odd) {
-  color: red;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-style: italic;
-}
-
-div:nth-of-type(2) {
-  color: blue;
-  font-family: monospace;
-}
-
-div:nth-of-type(3) {
+ol li:nth-of-type(even) {
   color: green;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 50px;
-
 }
 
-div:nth-of-type(4) {
-  color: blueviolet;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ol li:nth-of-type(odd) {
+  text-transform: uppercase;
 }
 
-div:nth-of-type(5) {
-  color: sienna;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1, h3 {
+  color: red;
+}
+
+h1 {
+  font-size: 40px;
+  border: 1px solid black;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: 700;
+}
+
+.programacao li:nth-of-type(-n+3) {
+  color: blue;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.link:hover {
+  font-weight: 700;
+}
+
+.link li a[href*="stackoverflow"] {
+  color: orange;
+}
+
+.link li a[href*="w3schools"] {
+  color: green;
+}
+
+.link li a[href*="MDN Web Docs"] {
+  color: black;
+}
+
+.link li a[href*="DevDocs"] {
+  color: yellow;
+}
+
+.link li a[href*="Trybe"] {
+  color: green
 }
