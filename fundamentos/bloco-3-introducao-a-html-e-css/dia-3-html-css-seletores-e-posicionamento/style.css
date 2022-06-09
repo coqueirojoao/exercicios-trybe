@@ -1,19 +1,31 @@
-h1, p {
-  text-align: center;
+div:hover {
+  border-style: outset;
 }
 
-li:hover {
-  background-color: red;
+div:nth-of-type(odd) {
+  color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
 }
 
-li:active {
+div:nth-of-type(2) {
+  color: blue;
+  font-family: monospace;
+}
+
+div:nth-of-type(3) {
+  color: green;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+
+}
+
+div:nth-of-type(4) {
+  color: blueviolet;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-li {
-  transition-duration: 1s;
-}
-
-ol, ul {
-  list-style: none;
+div:nth-of-type(5) {
+  color: sienna;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
