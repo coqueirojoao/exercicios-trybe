@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+
+table, tr, td {
+    border: 1px solid black;
+    box-shadow: 2px 2px 1px black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#vision-img {
+    height: 300px;
+    border-radius: 5%;
+    border: 2px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;         
+}
+
+header {
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+    font-size: 45px;
+    color: rgb(114, 95, 95);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.712);
+    
+}
+
+header h1 {
+    background-color: rgba(48, 48, 48, 0.048);
+    padding: 20px;
+}
+
+nav {
+    text-align: center;
+    background-color: rgba(48, 48, 48, 0.048);
+    padding: 15px;
+    height: 70px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.548);
+}
+
+nav li{
+    display: inline;
+    margin: 100px;
+    background-color: rgba(163, 163, 163, 0.507);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 5px black;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav li:hover {
+    background-color: rgba(126, 87, 87, 0.329);
+}
+
+main {
+    text-align: justify;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 100px;
+    font-size: 80px;
+    margin-left: 3px;
+    background-color: rgba(138, 138, 138, 0.548);
+    box-shadow: 2px 5px 5px black;
+    text-shadow: 2px 2px rgba(138, 135, 135, 0.418);
+    width: fit-content;
+    border-radius: 0px 0px 25px;
+}
+
+#generals {
+    margin-top: 60px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    text-align: center;
+}
+#vision {
+    margin-top: 30px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    margin-left: 5px;
+}
+
+#vision h3 {
+    text-align: center;
+}
+
+#body-img {
+    height: 300px;
+    border-radius: 5%;
+    border: 2px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#punch {
+    margin-top: 30px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 30px;
+    margin-left: 5px;    
+}
+
+#punch h3 {
+    text-align: center;
+}
+
+#refs {
+    margin-top: 30px;
+    font-size: 17px;
+    margin-left: 5px;
+    background-color: rgba(0, 0, 0, 0.164);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#refs li {
+    list-style-type: none
+}
+
+#refs a {
+    text-decoration: none;
+}
+
+#refs a:hover {
+    background-color: rgba(254, 255, 255, 0.39);
+    border-radius: 30px;
+}
+aside {
+    text-align: right;
+}
+aside p {
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px 0px;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    background-color: rgba(254, 255, 255, 0.39);
+    border-radius: 30px;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    padding-top: 5px;
+    color: aliceblue;
+}
+
+footer a {
+    text-decoration: none;
+    color: red;
+}
+
+footer a:hover {
+    background-color: rgba(0, 0, 0, 0.336);
+    border-radius: 30px;
+}
+
+div {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
