@@ -23,12 +23,27 @@ let n = 5
 
 // 3° Questão:
 
-let rightTriangle = ''
-let espaco = ' '
+// let rightTriangle = ''
+// let controlRight = 5
+// let espaco = ''
 
-for(index = 0; index <= n; index += 1) {
-    for(indexEspaco = 0; indexEspaco <= n; indexEspaco +=1)
-    inde
-    rightTriangle += '*'
-    console.log(rightTriangle)
+// for(let index = 0; index <= n; index += 1) {
+//     rightTriangle += '*'
+//     for(let j = 0; j < controlRight; j += 1) {
+//         espaco += ' '
+//     }
+//     console.log(espaco, rightTriangle)
+//     controlRight -= 1
+//     espaco = ''
+// }
+
+// 4° Questão:
+
+let pyramid = ''
+
+for(let index = 1; index <= n; index += 1) {
+    if(index % 2 !== 0) {
+        pyramid += '*'
+        console.log(pyramid)
+    }
 }
