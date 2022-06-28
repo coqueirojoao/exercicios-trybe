@@ -25,7 +25,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [X] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [X] 3-4: _HTML Semântico_
-- [X] 3-5: _[Projeto - HTML & CSS]()_
+- [X] 3-5: _[Projeto - HTML & CSS](https://www.linkedin.com/feed/update/urn:li:activity:6944824703551225856/?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A6944824703551225856%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)_
 
 ##### Bloco 4: Introdução - JavaScript
 
