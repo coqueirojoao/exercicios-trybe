@@ -63,8 +63,33 @@
         quadrado.style.backgroundColor = "rgb(76,164,109)"
         return quadrado;
        }
+       function corDoQuadradoVermelho() {
+        return document.body.style.backgroundColor = 'grey'
+       }
+       function correcaoDeTexto() {
+        return document.getElementsByClassName("title")[0].innerText = 'Exercício 5.1 - JavaScript!'
+       }
+       function capsLock() {
+        let paragrafos = document.querySelectorAll('p')
+        for (let index of paragrafos) {
+            paragrafos = index.style.textTransform = "uppercase"
+        }
+        return paragrafos;
+       }
+       function consoleReturn() {
+        let paragrafos = document.querySelectorAll('p')
+        let textos = []
+        for (let index of paragrafos) {
+            textos.push(index.innerText)
+        }
+        return textos
+       }
        console.log(ondeMeVejo())
        console.log(corDoQuadrado())
+       console.log(corDoQuadradoVermelho())
+       console.log(correcaoDeTexto())
+       console.log(capsLock())
+       console.log(consoleReturn())
     </script>
   </body>
 </html>
