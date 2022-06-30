@@ -69,3 +69,15 @@ function backgroundChange() {
 
 }
 }
+
+// 4° Questão:
+
+function createSexta(sexta) {
+    let div = document.getElementsByClassName("buttons-container")[0];
+    let botaoSexta = document.createElement('button')
+    botaoSexta.id = 'btn-friday'
+    botaoSexta.innerText = sexta
+    div.appendChild(botaoSexta)
+}
+
+createSexta('Sexta-feira')
