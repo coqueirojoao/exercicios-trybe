@@ -30,3 +30,14 @@ function createDaysOfTheWeek() {
     }
     ul.appendChild(li)
   }
+
+  // 2° Questão:
+  function criaBotaoFeriado(feriados) {
+    let div = document.getElementsByClassName('buttons-container')[0]
+    let botao = document.createElement('button')
+    botao.id = 'btn-holiday'
+    botao.innerText = feriados
+    div.appendChild(botao)
+  }
+
+criaBotaoFeriado('Feriados')
