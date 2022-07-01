@@ -131,3 +131,15 @@ function tarefaCalendario(tarefa) {
 }
 
 tarefaCalendario('cozinhar')
+
+// 8° Questão:
+
+function subtitleColor(cor) {
+    let div = document.createElement('div')
+    div.className = 'task'
+    div.style.backgroundColor = cor
+    let divPai = document.getElementsByClassName('my-tasks')[0]
+    divPai.appendChild(div)
+}
+
+subtitleColor('blue')
