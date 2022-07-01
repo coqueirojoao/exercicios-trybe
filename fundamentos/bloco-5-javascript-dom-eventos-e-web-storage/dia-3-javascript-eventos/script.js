@@ -108,8 +108,6 @@ function nameChange() {
 
 let lista = document.getElementsByClassName('day')
 
-// lista.forEach(function(event) {console.log(event.target)})
-
 for (let index = 0; index < lista.length; index += 1) {
     lista[index].addEventListener('mouseover', zoom)
     lista[index].addEventListener('mouseout', out)
@@ -122,3 +120,14 @@ function zoom(event) {
 function out(event) {
     event.target.style = 'color: #777; font-size: 20px;'
 }
+
+// 7° Questão:
+
+function tarefaCalendario(tarefa) {
+    let span = document.createElement('span')
+    span.innerText = tarefa
+    let div = document.getElementsByClassName('my-tasks')[0]
+    div.appendChild(span)
+}
+
+tarefaCalendario('cozinhar')
