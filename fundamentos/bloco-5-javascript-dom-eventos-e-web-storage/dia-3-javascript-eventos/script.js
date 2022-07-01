@@ -55,91 +55,142 @@ criaBotaoFeriado("Feriados");
 
 // 3° Questão:
 
-let botao = document.getElementById('btn-holiday')
-botao.addEventListener('click', backgroundChange)
+let botao = document.getElementById("btn-holiday");
+botao.addEventListener("click", backgroundChange);
 
 function backgroundChange() {
-    let holiday = document.getElementsByClassName('holiday')
-    for (let index of holiday) {
-        if (index.style.backgroundColor !== 'white') {
-            index.style.backgroundColor = 'white'
-        } else {
-            index.style.backgroundColor = 'rgb(238,238,238)'
-        }
-
-}
+  let holiday = document.getElementsByClassName("holiday");
+  for (let index of holiday) {
+    if (index.style.backgroundColor !== "white") {
+      index.style.backgroundColor = "white";
+    } else {
+      index.style.backgroundColor = "rgb(238,238,238)";
+    }
+  }
 }
 
 // 4° Questão:
 
 function createSexta(sexta) {
-    let div = document.getElementsByClassName("buttons-container")[0];
-    let botaoSexta = document.createElement('button')
-    botaoSexta.id = 'btn-friday'
-    botaoSexta.innerText = sexta
-    div.appendChild(botaoSexta)
+  let div = document.getElementsByClassName("buttons-container")[0];
+  let botaoSexta = document.createElement("button");
+  botaoSexta.id = "btn-friday";
+  botaoSexta.innerText = sexta;
+  div.appendChild(botaoSexta);
 }
 
-createSexta('Sexta-feira')
+createSexta("Sexta-feira");
 
 // 5° Questão:
 
-let botaoSexta = document.getElementById('btn-friday')
+let botaoSexta = document.getElementById("btn-friday");
 
-botaoSexta.addEventListener('click', nameChange)
+botaoSexta.addEventListener("click", nameChange);
 
-let friday = document.getElementsByClassName('friday')
-let fridayArray = []
+let friday = document.getElementsByClassName("friday");
+let fridayArray = [];
 for (let index of friday) {
-fridayArray.push(index.innerText)
+  fridayArray.push(index.innerText);
 }
 
 function nameChange() {
-    for (let indexText in friday) {
-        if (friday[indexText].innerText !== 'Sextou!!!!') {
-            friday[indexText].innerText = 'Sextou!!!!'
-        } else {
-            friday[indexText].innerText = fridayArray[indexText]
-        }
+  for (let indexText in friday) {
+    if (friday[indexText].innerText !== "Sextou!!!!") {
+      friday[indexText].innerText = "Sextou!!!!";
+    } else {
+      friday[indexText].innerText = fridayArray[indexText];
     }
+  }
 }
 
 // 6° Questão:
 
-let lista = document.getElementsByClassName('day')
+let lista = document.getElementsByClassName("day");
 
 for (let index = 0; index < lista.length; index += 1) {
-    lista[index].addEventListener('mouseover', zoom)
-    lista[index].addEventListener('mouseout', out)
+  lista[index].addEventListener("mouseover", zoom);
+  lista[index].addEventListener("mouseout", out);
 }
 
 function zoom(event) {
-    event.target.style = 'color: blue; font-size: 26px;'
+  event.target.style.fontSize = "26px";
 }
 
 function out(event) {
-    event.target.style = 'color: #777; font-size: 20px;'
+  event.target.style.fontSize = "20px";
 }
 
 // 7° Questão:
 
 function tarefaCalendario(tarefa) {
-    let span = document.createElement('span')
-    span.innerText = tarefa
-    let div = document.getElementsByClassName('my-tasks')[0]
-    div.appendChild(span)
+  let span = document.createElement("span");
+  span.innerText = tarefa;
+  let div = document.getElementsByClassName("my-tasks")[0];
+  div.appendChild(span);
 }
 
-tarefaCalendario('cozinhar')
+tarefaCalendario("Projeto:");
 
 // 8° Questão:
 
 function subtitleColor(cor) {
-    let div = document.createElement('div')
-    div.className = 'task'
-    div.style.backgroundColor = cor
-    let divPai = document.getElementsByClassName('my-tasks')[0]
-    divPai.appendChild(div)
+  let div = document.createElement("div");
+  div.className = "task";
+  div.style.backgroundColor = cor;
+  let divPai = document.getElementsByClassName("my-tasks")[0];
+  divPai.appendChild(div);
 }
 
-subtitleColor('blue')
+subtitleColor("red");
+
+// 9° Questão:
+
+let divTask = document.getElementsByClassName("task")[0];
+
+divTask.addEventListener("click", taskSelector);
+
+function taskSelector() {
+  if (divTask.classList[1] !== "selected") {
+    divTask.classList.add("selected");
+  } else {
+    divTask.className = "task";
+  }
+}
+
+// 10° Questão:
+
+for (let index = 0; index < lista.length; index += 1) {
+  lista[index].addEventListener("click", taskColor);
+}
+
+function taskColor(event) {
+  let div = document.getElementsByClassName("selected")[0];
+  if (event.target.style.color !== div.style.backgroundColor) {
+    event.target.style.color = div.style.backgroundColor;
+  } else {
+    event.target.style.color = "rgb(119,119,119)";
+  }
+}
+
+// Bonus:
+let buttonAdd = document.getElementById("btn-add");
+buttonAdd.addEventListener("click", addText);
+let input = document.getElementById("task-input");
+input.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("btn-add").click();
+  }
+});
+
+function addText() {
+  let li = document.createElement("li");
+  let listaComp = document.getElementsByClassName("task-list")[0];
+
+  if (input.value === "") {
+    alert("Escreva alguma coisa.");
+  } else {
+    li.innerText = input.value;
+    listaComp.appendChild(li);
+  }
+}
