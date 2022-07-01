@@ -81,3 +81,25 @@ function createSexta(sexta) {
 }
 
 createSexta('Sexta-feira')
+
+// 5° Questão:
+
+let botaoSexta = document.getElementById('btn-friday')
+
+botaoSexta.addEventListener('click', nameChange)
+
+let friday = document.getElementsByClassName('friday')
+let fridayArray = []
+for (let index of friday) {
+fridayArray.push(index.innerText)
+}
+
+function nameChange() {
+    for (let indexText in friday) {
+        if (friday[indexText].innerText !== 'Edson') {
+            friday[indexText].innerText = 'Edson'
+        } else {
+            friday[indexText].innerText = fridayArray[indexText]
+        }
+    }
+}
