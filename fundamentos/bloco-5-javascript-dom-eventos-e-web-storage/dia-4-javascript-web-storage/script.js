@@ -2,15 +2,6 @@ let button = document.getElementsByTagName('button')[0]
 
 button.addEventListener('click', darkMode)
 
-const modificacoes = {
-    
-    bodyColor: 'white',
-    pColor: 'black',
-    h1Color: 'black',
-    pSize: '17px',
-    pFont: 'Arial',
-    
-}
 
 function darkMode() {
     let body = document.body
@@ -25,6 +16,9 @@ function darkMode() {
         p.style.color = 'black'
         h1.style.color = 'black'
     }
+    localStorage.setItem('fundoDaPagina', body.style.backgroundColor)
+    localStorage.setItem('corDoParagrafo', p.style.color)
+    localStorage.setItem('corDoTitulo', h1.style.color)
 }
 
 let buttonText = document.getElementsByTagName('button')[1]
@@ -34,11 +28,10 @@ function biggerText() {
     let p = document.getElementsByTagName('p')[0]
     if (p.style.fontSize !== '25px') {
     p.style.fontSize = '25px'
-    localStorage.setItem('tamanhoDoTexto', JSON.stringify(p.style.fontSize))
     } else {
         p.style.fontSize = '17px'
-        localStorage.setItem('tamanhoDoTexto', JSON.stringify(p.style.fontSize))
     }
+    localStorage.setItem('tamanhoDoTexto', p.style.fontSize)
 }
 
 let buttonFont = document.getElementsByTagName('button')[2]
@@ -48,18 +41,24 @@ function fontChange() {
     let p = document.getElementsByTagName('p')[0]
     if (p.style.fontFamily !== "Verdana") {
         p.style.fontFamily = "Verdana"
-        localStorage.setItem('mudancaDo')
     } else {
         p.style.fontFamily = "Arial"
     }
+    localStorage.setItem('mudarFonte', p.style.fontFamily)
 }
 
 function localData() {
-    if (localStorage.getItem('teste') === null) {
-        localStorage.setItem('teste', JSON.stringify(modificacoes))
-    } else {
-        const mudancas = JSON.parse(localStorage.getItem('teste'))
-    }
+let backgroundSalvo = localStorage.getItem('fundoDaPagina')
+let corDoParagrafo = localStorage.getItem('corDoParagrafo')
+let corDoTitulo = localStorage.getItem('corDoTitulo')
+let tamanhoDoTexto = localStorage.getItem('tamanhoDoTexto')
+let mudarFonte = localStorage.getItem('mudarFonte')
+
+document.body.style.backgroundColor = backgroundSalvo
+document.querySelector('p').style.color = corDoParagrafo
+document.querySelector('p').style.fontSize = tamanhoDoTexto
+document.querySelector('p').style.fontFamily = mudarFonte
+document.querySelector('h1').style.color = corDoTitulo
 }
 
 
