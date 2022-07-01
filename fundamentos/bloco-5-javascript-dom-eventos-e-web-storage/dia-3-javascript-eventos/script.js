@@ -96,10 +96,29 @@ fridayArray.push(index.innerText)
 
 function nameChange() {
     for (let indexText in friday) {
-        if (friday[indexText].innerText !== 'Edson') {
-            friday[indexText].innerText = 'Edson'
+        if (friday[indexText].innerText !== 'Sextou!!!!') {
+            friday[indexText].innerText = 'Sextou!!!!'
         } else {
             friday[indexText].innerText = fridayArray[indexText]
         }
     }
+}
+
+// 6° Questão:
+
+let lista = document.getElementsByClassName('day')
+
+// lista.forEach(function(event) {console.log(event.target)})
+
+for (let index = 0; index < lista.length; index += 1) {
+    lista[index].addEventListener('mouseover', zoom)
+    lista[index].addEventListener('mouseout', out)
+}
+
+function zoom(event) {
+    event.target.style = 'color: blue; font-size: 26px;'
+}
+
+function out(event) {
+    event.target.style = 'color: #777; font-size: 20px;'
 }
