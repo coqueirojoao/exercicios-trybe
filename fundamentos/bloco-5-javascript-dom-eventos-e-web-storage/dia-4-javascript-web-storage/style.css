@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.myButton {
+    display: flex;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
