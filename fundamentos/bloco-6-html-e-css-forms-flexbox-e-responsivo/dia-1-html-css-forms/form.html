@@ -5,76 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TrybeTrip</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Preencha o formulário para concorrer a uma viagem incrível!</h1>
+    <header class="level">
+      <h1 class="title is-2 level-item has-text-centered">Preencha o formulário para concorrer a uma viagem incrível!</h1>
     </header>
-    <main>
+    <main class="column">
       <form action="" method="get">
         <label for=""
-          >Nome:
+          class="label">Nome:
           <input
             type="text"
             id="input-name"
+            class="input is-primary"
             placeholder="Escreva o seu nome!"
             minlength="10"
             maxlength="40"
             required
             name="name" /></label
-        ><br /><br />
+        >
         <label for=""
-          >E-mail:
+        class="label">E-mail:
           <input
             type="email"
             name="user"
             id="input-email"
+            class="input is-primary"
             placeholder="Digite o seu e-mail!"
             minlength="10"
             maxlength="50"
             required /></label
-        ><br /><br />
+        >
         <p>Destinos preferidos:</p>
         <label for="cidade"
-          ><input
+          class="label"><input
             type="radio"
             id="cidade"
             value="sp"
             name="locais"
-          />Cidade</label
+          /> Cidade</label
         >
         <label for="campo"
-          ><input
+        class="label"><input
             type="radio"
             id="campo"
             value="sp"
             name="locais"
-          />Campo</label
+          /> Campo</label
         >
         <label for="praia"
-          ><input
+        class="label"><input
             type="radio"
             id="praia"
             value="sp"
             name="locais"
-          />Praia</label
+          /> Praia</label
         >
         <label for="montanhas"
-          ><input
+        class="label"><input
             type="radio"
             id="montanhas"
             value="sp"
             name="locais"
-          />Montanhas</label
+          /> Montanhas</label
         >
         <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-        <textarea name="areasobre" id="aboutme" cols="70" rows="20" maxlength="500"></textarea>
-        <p>Qual a melhor data para realizar sua viagem? <input type="date"></p>
-        <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <input type="checkbox"></p>
-        <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <input type="checkbox"><br><br>
-        <button type="submit" id="button-submit">Enviar!</button>
-        <button type="reset" id="button-reset">Apagar!</button>
+        <textarea name="areasobre" id="aboutme" class="textarea input is-primary" rows="5" placeholder="Fale um pouco sobre você!" maxlength="500"></textarea>
+        <p class="has-text-black is-size-5">Qual a melhor data para realizar sua viagem? <input type="date" id="data"></p>
+        <p class="has-text-black is-size-5">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe? <input type="checkbox" class="checkbox"></p>
+        <p class="has-text-black is-size-5">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros. <input type="checkbox" class="checkbox"><br><br>
+        <button type="submit" id="button-submit" class="button is-primary is-rounded">Enviar!</button>
+        <button type="reset" id="button-reset" class="button is-danger is-rounded">Apagar!</button>
       </form>
     </main>
     <script src="script.js"></script>
