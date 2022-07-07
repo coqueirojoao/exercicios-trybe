@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(179, 179, 179);
+    height: 100vh;
+  }
+
+.button {
+    box-shadow: 2px 2px black;
+    margin-right: 5px;
+}
