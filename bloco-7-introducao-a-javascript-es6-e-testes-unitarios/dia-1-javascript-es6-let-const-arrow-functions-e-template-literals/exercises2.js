@@ -28,12 +28,34 @@ const longestWord = (phrase) => {
 
 // 3 - 🚀 Crie uma página com um contador de cliques
 
-let clickCount = 0
-const button = document.querySelector('button');
-clickCount.innerText = 0;
+// let clickCount = 0
+// const button = document.querySelector('button');
 
-function clickCounter() {
-    clickCount += 1
-    document.querySelector('span').innerText = clickCount;
+// function clickCounter() {
+//     clickCount += 1
+//     document.querySelector('span').innerText = clickCount;
+// }
+// button.addEventListener('click', clickCounter);
+
+// 4 - 🚀 Crie duas funções JavaScript com as seguintes especificações
+
+const nameCall = nome => {
+    const tryber = 'Tryber x aqui!'
+    const array = tryber.split(' ');
+    let novaFrase = '';
+    for (let i of array) {
+        (i === 'x') ? novaFrase = `Tryber ${nome} aqui!` : `está errada a afirmação`;
+    }
+    return novaFrase;
 }
-button.addEventListener('click', clickCounter);
+
+console.log(nameCall('João Pedro Coqueiro de Azevedo'))
+
+function otherFunction(parameter) {
+    const skills = ['Javascript', 'CSS', 'HTML'];
+    let frase = `${parameter}
+    Minhas três principais habilidades são: ${skills}`;
+    return frase;
+}
+
+console.log(otherFunction(nameCall('João Pedro')));
