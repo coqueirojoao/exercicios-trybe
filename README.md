@@ -42,9 +42,9 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 5-3: _JavaScript - Eventos_
 - [X] 5-4: _JavaScript - Web Storage_
 - [X] 5-5: _[Projeto - Meme Generator]()_
-- [X] 5-6: _[Projeto - Arte com Pixels]()_
+- [X] 5-6: _[Projeto - Arte com Pixels](https://www.linkedin.com/posts/jo%C3%A3o-pedro-coqueiro-de-azevedo-875aa3239_vqv-gotrybe-activity-6949887493718646784-6bZm?utm_source=linkedin_share&utm_medium=member_desktop_web)_
 - [X] 5-7: _[Projeto - Lista de tarefas]()_
-- [X] 5-7: _[Projeto - Adivinhe a Cor]()_
+- [X] 5-7: _[Projeto - Adivinhe a Cor](https://www.linkedin.com/posts/jo%C3%A3o-pedro-coqueiro-de-azevedo-875aa3239_vqv-gotrybe-activity-6950271462423367681-jb7m?utm_source=linkedin_share&utm_medium=member_desktop_web)_
 - [X] 5-7: _[Projeto - Carta Misteriosa]()_
 
 ##### Bloco 6: HTML & CSS avançado
@@ -53,13 +53,13 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [X] 6-2: _Bibliotecas JavaScript e Frameworks CSS_
 - [X] 6-3: _CSS Flexbox - Part 1_
 - [X] 6-4: _CSS Flexbox - Part 2_
-- [ ] 6-5: _CSS Responsivo - Mobile First_
-- [ ] 6-6: _[Projeto - Página inicial do Facebook]()_
+- [X] 6-5: _CSS Responsivo - Mobile First_
+- [X] 6-6: _[Projeto -Trybewarts](https://www.linkedin.com/posts/jo%C3%A3o-pedro-coqueiro-de-azevedo-875aa3239_vqv-gotrybe-activity-6953461164206923776-l4nS?utm_source=linkedin_share&utm_medium=member_desktop_web)_
 
 ##### Bloco 7: JavaScript ES6 & Testes Unitários
 
-- [ ] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
-- [ ] 7-2: _JavaScript ES6 - Objects_
+- [X] 7-1: _JavaScript ES6 - let, const, arrow functions e template literals_
+- [X] 7-2: _JavaScript ES6 - Objects_
 - [ ] 7-3: _Testes unitários em JavaScript_
 - [ ] 7-4: _[Projeto - JavaScript Testes Unitários]()_
 
