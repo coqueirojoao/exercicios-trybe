@@ -29,7 +29,10 @@ console.log(newEmployees());
 
 const validate = (betNumber) => {
     const luckyNumber = Math.floor((Math.random() * 5) + 1);
-    if (betNumber !== luckyNumber) {
+    if (betNumber > 5 || betNumber < 1) {
+        return `Insira um número válido de 1 a 5`
+    }
+    else if (betNumber !== luckyNumber) {
         return `Tente novamente!
 O número sorteado foi: ${luckyNumber}`;
     }
@@ -41,5 +44,38 @@ const lotteryResult = (betNumber, equal) => {
     return equal(betNumber);
 }
 
-console.log(lotteryResult(3, validate));
+console.log(lotteryResult(5, validate));
 
+
+// 3 - Crie uma HOF que receberá três parâmetros:
+// O primeiro será um array de respostas corretas (Gabarito);
+// O segundo será um array contendo as respostas fornecidas por uma pessoa estudante;
+// O terceiro é uma função que compara os dois arrays e então dá uma pontuação baseada nos acertos. Para isso essa função usará os seguintes critérios:
+// Uma resposta correta adiciona 1 ponto à pontuação final;
+// A ausência de uma resposta não altera a pontuação (quando for "N.A");
+// Uma resposta incorreta reduz a pontuação final em 0.5 ponto.
+// Ao final, a HOF deve retornar o total de pontos obtidos através das respostas fornecidas pela pessoa estudante. Utilize os seguintes arrays:
+
+const anwsersResult = (anwsers, studentAnwsers) => {
+    let totalNumber = 0
+    for (let i = 0; i < anwsers.length; i += 1) {
+        if (anwsers[i] === studentAnwsers[i]) {
+            totalNumber += 1
+        } else if (studentAnwsers[i] === 'N.A') {
+            totalNumber += 0
+        } else {
+            totalNumber -= 0.5
+        }
+    }
+
+    return totalNumber;
+}
+
+
+const aproveTest = (anwsers, studentAnwsers, result) => {
+    const counter = result(anwsers, studentAnwsers);
+
+    return counter;
+}
+
+console.log(aproveTest(['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'], ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'], anwsersResult))
