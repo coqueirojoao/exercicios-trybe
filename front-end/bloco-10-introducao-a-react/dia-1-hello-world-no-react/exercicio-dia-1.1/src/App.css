@@ -1,0 +1,24 @@
+body {
+  background-color: black;
+  text-align: center;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.headerText {
+  color: white;
+}
+
+.footerText {
+  color: gray;
+}
+
+.listContent {
+  color: white;
+}
